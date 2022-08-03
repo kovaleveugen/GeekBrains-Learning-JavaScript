@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=N5q3zPRdl4Zi_6kEIQ2gasUa-1scRl-dEe7ZaCfv_gldOpuzuWqojjjvGCI_RJsQeqfOgm2MpTt4yQuoyw45Zf6S-ZbDZYIv1DzBxV2YJ9_bpz0ePdQ9J9fqnlGr55bSkhm1U3FrSjGwO5rlzyTRCoc2bFJlygzmz_O6rmf73KvJ4Hkn4f7T1yPKlSCj8xSCqaL9V7BpI2xJC2kSQyhfVy9GyfLxdc9NQ1m5ZKnmfZccHkTA9RXU6r-bgIdBchAjE0ATg78o25GLS2bn-9rFQcKiyDgLlLhtMT5klPTifuFqB2rTDvj6MhOWd60G20WNkahRiBEdC6rP7H4woQ6Y24onJ8d46I7o3inyQZ0MBZYBKAPk6VBGGWGhZEd_TF_yrvt5kJhopMgrtHr1wC2BUKV9FEGGJEDaAROaZ4m-JpKvWzBpjv38TvdWWl4OOWekvEYPKsc0phRpu7W8hxZ9A6l3egI-d5l4_OiWCd37-ieDnHrQSLIdAOpSCmBIF-A8xXI5vfFW5YwMDDjf9Eq_ddjGC_DOYwwHNqNbrhW64Q4CrB9mCWaMba4DV28cYgmUICiu7E9KfCEy0Wki6kwcCdcOJqKMy8Ui1z98tmYSttnkmMEkbcYAy-rrxeEjGUWhNMzByMhAkYUvHt-IkS3qF9dfTGkKuylsW8TrY-my6srcuUFXQ8q0uMBUR1bS31hr0OfzNQfK5pNHHeR8Ma6O0K3LX3h1a3NJCqo6t51iXw3Kcuyv3puaILr2fdKhWmnBgxUzWDHE30gblXgiFi-eEpzbzvHDUBbZrAoXf_kXVk6V_IRQkEZA4p7U7MTyP1h4_o6lXh-_Vb5sxZ_QCQ7FybifTag2cp57egaU0CRmoFfGG6s5XLh42kVbuvgo7sewvmpkVUeTZrsdwlCS2KHxdIW7UIrmsB_XqtmhSGyKhGl_Ah5XbEXB-EH0uzTFgu5mW9W8VcZMpMrF3oBcfI13qwZr0dl42q75mj7bW2MjPhWIF96uBQsbWuO5mvZVg-AiptQbwJc2lKUIDsH0sqWbkMqjxHyRq2GYPY3x7cF_zvHeIF8qn-KwyE6EqGD6c209FivXPHXF0Iy_ONPmQsR2L1ksfagWdOfdXp6AvF602OnVpRMORFgZMrMhRXBhobS_jpKglMoYkkzPqqgzkif5QLEo5vVsnxtB_RiEOV3Atmp0D9uR9rUQlhthM8O5xfQGE_jCVEVc8X35L9AN9EzUxLaGIJuqeS13H7vMH-6-NTZJ9yjO51C78Upj_o8jUTKwHWNue_C7QiHIYPEY4NAqoaAZ9G1CUoXNbD2trEhVHl2okAlGRPr-h0P69v6rM_gjF6omsFJhRe55TGp6bRqU2zgeH6WnoveuUHvllVewSbInHBEkiL1m2IQp-CqANKkgTXEq-p8lPyW6UbzTmy1ytIXd4eIzKuulXHgwC14clTl6S9pu0kU9zM-wDNh9RPxTp7YJIzBvvXGjHqmcflGfo8HtIHbmIR-qWtb6bshY0EICI3Zr2wtoOEJuWMqjsTjBxMklEKUK0mhdFPrJKZILAKV5ovCyf1JSr1UObeJGs21GUB00L-iR6SJwHuXZegynB6a-_d5k8De9kGz6ca7_CTXV4pCgyMbOVPF4M7wiJSlhF3HKS_CmTT0kRCkZPJKqhCFl4HX0R--gl0sYcIp2rkKcBchiu_70RRuFAKRSsQyDCBFCXcg5LcCRgx248MxUHmamBz-Xh4HgDaAJfmvSi8SrFtH1kBmifKxvTJtAR2-VMTSnC-NEpbWIfL5hIf7haAxA5tI4JLBsL_zV6tg3rehxa-jDCp3z2hn4dUUzsAEMeN4stlmsePsBW6i2uEpgoSYOzQbTgX-8LsH10esBAcN3OoMrqYaKrABJZJffvaKCXb6JU2y1jBr3wJUypF2Xc4PUnxRkcxPXwLh2045UbCRPaHErbs5ET8DCb7c-K_A"
+        charset="UTF-8"></script>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+    </ul>
+
+    <!-- Задание. Найдите элемент с классом .nav-link и используя метод toggle из свойства classList
+    у элемента, добавьте или уберите класс .active. -->
+
+    <script>
+
+        'use strict';
+
+        let navlink_ref = document.querySelector('.nav-link');
+        navlink_ref.classList.add('active');
+        navlink_ref.classList.toggle('active');
+
+    </script>
+
+</body>
+
+</html>
