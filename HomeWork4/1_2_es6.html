@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        "use strict";
+
+        class Post {
+
+            constructor(author, text, date) {
+                this.author = author;
+                this.text = text;
+                this.date = date;
+            }
+
+            edit(text) {
+                this.text = text;
+            }
+        }
+
+        const note1 = new Post("Булгаков Михаил",
+            "Не шалю, никого не трогаю, починяю примус, – недружелюбно насупившись, проговорил кот, – и еще считаю своим долгом предупредить, что кот древнее и неприкосновенное животное",
+            new Date("December 1, 1928"));
+
+        note1.edit("Да, человек смертен, но это было бы еще полбеды. Плохо то, что он иногда внезапно смертен, вот в чем фокус!");
+
+        console.log(note1.text);
+
+        class AttachedPost extends Post {
+
+            constructor(author, text, date) {
+                super(author, text, date);
+                this.highlighted = false;
+            }
+
+            makeTextHighlighted() {
+                this.highlighted = true;
+            }
+        }
+
+        const attachednote1 = new AttachedPost("Булгаков Михаил",
+            "Аннушка уже купила подсолнечное масло, и не только купила, но даже и разлила. Так что заседание не состоится",
+            new Date("December 1, 1928"));
+
+        attachednote1.makeTextHighlighted();
+
+        attachednote1.edit("Ни кондукторшу, ни пассажиров не поразила самая суть дела: не то, что кот лезет в трамвай, в чем было бы еще полбеды, а то, что он собирается платить!");
+
+        console.log(attachednote1);
+
+
+    </script>
+</body>
+
+</html>
